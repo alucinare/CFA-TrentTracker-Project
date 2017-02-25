@@ -19,6 +19,38 @@ We used the following user stories to design our application:
 
 ##Installation & How To Run
 
+This does require a google api key to run. To obtain a key follow this intstructions:
+
+Each Google Maps Web Service requires an API key or Client ID. API keys are freely available with a Google Account at https://developers.google.com/console. To generate a server key for your project:
+
+    Visit https://developers.google.com/console and log in with a Google Account.
+    Select an existing project, or create a new project.
+    Click Enable an API.
+    Browse for the API, and set its status to "On". The Python Client for Google Maps Services accesses the following APIs:
+        Directions API
+        Distance Matrix API
+        Elevation API
+        Geocoding API
+        Time Zone API
+        Roads API
+    Once you've enabled the APIs, click Credentials from the left navigation of the Developer Console.
+    In the "Public API access", click Create new Key.
+    Choose Server Key.
+    If you'd like to restrict requests to a specific IP address, do so now.
+    Click Create.
+
+Your API key should be 40 characters long, and begin with AIza.
+
+Important: This key should be kept secret on your server.
+
+This API key should be put into a seperate file called 'config.rb'. Inside the file looks like this:
+
+```
+class Config
+  API_KEY = 'insert_your_api_key_here'
+end
+```
+
 Install the dependencies:
 
 Install google-maps-services:

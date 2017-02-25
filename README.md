@@ -23,21 +23,21 @@ This does require a google api key to run. To obtain a key follow this intstruct
 
 Each Google Maps Web Service requires an API key or Client ID. API keys are freely available with a Google Account at https://developers.google.com/console. To generate a server key for your project:
 
-    Visit https://developers.google.com/console and log in with a Google Account.
-    Select an existing project, or create a new project.
-    Click Enable an API.
-    Browse for the API, and set its status to "On". The Python Client for Google Maps Services accesses the following APIs:
+    1) Visit https://developers.google.com/console and log in with a Google Account.
+    2) Select an existing project, or create a new project.
+    3) Click Enable an API.
+    4) Browse for the API, and set its status to "On". The Python Client for Google Maps Services accesses the following APIs:
         Directions API
         Distance Matrix API
         Elevation API
         Geocoding API
         Time Zone API
         Roads API
-    Once you've enabled the APIs, click Credentials from the left navigation of the Developer Console.
-    In the "Public API access", click Create new Key.
-    Choose Server Key.
-    If you'd like to restrict requests to a specific IP address, do so now.
-    Click Create.
+    5) Once you've enabled the APIs, click Credentials from the left navigation of the Developer Console.
+    6) In the "Public API access", click Create new Key.
+    7) Choose Server Key.
+    8) If you'd like to restrict requests to a specific IP address, do so now.
+    9) Click Create.
 
 Your API key should be 40 characters long, and begin with AIza.
 
